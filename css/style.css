@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #ddd;
+    --card-border-color: #eee;
+    --icon-color: #fff;
+    --icon-shadow: 2px 2px 2px #000;
+}
+
+body {
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Baumans", system-ui;
+}
+
+.profile-card {
+    opacity: 1;
+    background: url("../images/bg1.jpeg") no-repeat center/cover;
+    width: 400px;
+    height: 500px;
+    border: 3px solid var(--card-border-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+ul {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    padding: 10px;
+    font-size: 30px;
+    color: var(--icon-color);
+    text-shadow: var(--icon-shadow);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.profile-card:hover {
+    opacity: 0.8;
+    transform: scale(1.02);
+}
+
+i:hover {
+    transform: scale(1.5); 
+    opacity: 1;
+}
+
+
